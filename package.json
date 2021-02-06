@@ -1,0 +1,8 @@
+{
+  "name": "@talent-cloud/lab00-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:talent-cloud/lab00-javascript.git",
+  "author": "Sandro Dolidze <me@sdolidze.ge>",
+  "license": "MIT"
+}
