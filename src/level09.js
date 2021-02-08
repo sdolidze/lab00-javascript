@@ -1,4 +1,4 @@
-// # reduce
+// # Reduce
 
 function A1() {
   const sum = xs => {
