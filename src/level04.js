@@ -9,13 +9,13 @@ function A1() {
 
 function A2() {
   const person = { name: undefined };
-  console.log(Object.keys(person));
   console.log(person.name);
+  console.log(Object.keys(person));
   console.log(JSON.stringify(person, null, 4));
 }
 
 function A3() {
-  person.name = { name: null };
+  const person = { name: null };
   console.log(Object.keys(person));
   console.log(person.name);
   console.log(JSON.stringify(person, null, 4));

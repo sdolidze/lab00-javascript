@@ -91,24 +91,32 @@ async function B1() {
   console.log(x + y);
 }
 
-async function B2() {
+function B2() {
+  const x = 5;
+
+  Promise.resolve(7).then(y => {
+    console.log(x + y);
+  });
+}
+
+async function B3() {
   const x = 5;
   const y = await Promise.reject(7);
 
   console.log(x + y);
 }
 
-async function B3() {
+async function B4() {
   try {
     const x = 5;
     const y = await Promise.reject(7);
     console.log(x + y);
   } catch (err) {
-    console.log("Oops");
+    console.log(err);
   }
 }
 
-async function B4() {
+async function B5() {
   const resolveIn = (milliseconds, value) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => resolve(value), milliseconds);
@@ -122,7 +130,7 @@ async function B4() {
   console.log(a + b + c);
 }
 
-async function B5() {
+async function B6() {
   const resolveIn = (milliseconds, value) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => resolve(value), milliseconds);

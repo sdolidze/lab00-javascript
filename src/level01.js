@@ -56,6 +56,10 @@ function A2() {
   // Delta
   const bindedGetName = getName.bind(john);
   console.log(bindedGetName());
+
+  // Epsilon
+  const lambdaGetName = () => john.getName();
+  console.log(lambdaGetName());
 }
 
 function A3() {
