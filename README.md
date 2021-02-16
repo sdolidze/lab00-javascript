@@ -1,5 +1,7 @@
 # Lab 00 - JavaScript
 
+▶️ https://youtu.be/A58zbeNRapA
+
 - Level 00: var, let, const
 - Level 01: Classes, prototypical inheritance
 - Level 02: Destructuring
